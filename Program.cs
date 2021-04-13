@@ -28,7 +28,17 @@ namespace VariablesCS
 
             string userName = Console.ReadLine();
 
-            Console.WriteLine($"Hey, {userName}.");
+            if (userName == "Alice")
+            {
+                Console.WriteLine("Nice to see you again, Alice.");
+
+            }
+            else
+            {
+                Console.WriteLine("Hey, " + userName + ".");
+            }
+
+            //Console.WriteLine($"Hey, {userName}.");
 
             //getting numbers
 
