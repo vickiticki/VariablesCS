@@ -4,41 +4,36 @@ namespace VariablesCS
 {
     class Program
     {
-        static void Main(string[] args)
-        {
 
-            //practice creating variables
+
+        static void theWholeThing()
+        {
             int numberOfCupsOfCoffee = 2;
 
             string fullName = "Victoria Tiller";
 
             var today = DateTime.Today;
 
-            //printing them out
-
             Console.WriteLine(numberOfCupsOfCoffee + " " + fullName + " " + today.ToString("d"));
 
-            //adding space
-
+            //adding space to make it look nice
             Console.WriteLine();
 
-            //getting input from user
-
+            //greeting
             Console.Write("What is your name? ");
 
             string userName = Console.ReadLine();
 
             if (userName == "Alice")
             {
-                Console.WriteLine("Nice to see you again, Alice.");
-
+                Console.WriteLine("Nice to see you again, Alice");
             }
             else
             {
-                Console.WriteLine("Hey, " + userName + ".");
+                Console.WriteLine("Howdy, " + userName);
             }
 
-            //Console.WriteLine($"Hey, {userName}.");
+            Console.WriteLine();
 
             //getting numbers
 
@@ -75,9 +70,19 @@ namespace VariablesCS
             Console.WriteLine($"{firstOperand} divided by {secondOperand} is {quotient}.");
             Console.WriteLine($"If you divide {firstOperand} by {secondOperand} you'll have {remainder} left over.");
 
+        }
+
+        static void Main(string[] args)
+        {
+
+            theWholeThing();
+
+
+
             //end
 
 
         }
     }
+
 }
